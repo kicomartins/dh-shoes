@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Roboto:wght@400;700&display=swap');
 
 *{
   margin: 0;
@@ -20,14 +20,18 @@ body {
   margin: 0 auto;
 }
 
+header {
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 20px rgba(159, 159, 159, 0.65);
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: 12rem;
-  background-color: #FFFFFF;
-  box-shadow: 0px 1px 20px rgba(159, 159, 159, 0.65);
 }
 
 .logo {
@@ -199,4 +203,140 @@ footer a {
 footer section h3 {
   font-size: 2rem;
   font-weight: 700;
+}
+
+/* Formulario */
+
+.form-employee {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 30px 55px 45px;
+  margin: 60px auto;
+
+  border: 1px solid #9B9B9B;
+  box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.25);
+}
+
+main section h1 {
+  font-size: 3.9rem;
+  font-weight: 600;
+  color: #575757;
+  margin: 0 auto 25px;
+}
+
+.trabalhe-conosco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  
+  color: #9B9B9B;
+}
+
+.trabalhe-conosco button {
+  text-transform: lowercase;
+  width: 100%;
+  height: 33px;
+  background-color: #C2185B;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  border: none;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+
+.input-wrapper label {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.input-wrapper input, select {
+  height: 25px;
+  padding: 2px;
+  font-size: 1.2rem;
+  color: #C2185B;
+  border: 1px solid #9B9B9B;
+}
+
+.input-wrapper select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='6' viewBox='0 0 14 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 6L13.0622 0.75H0.937822L7 6Z' fill='%23C4C4C4'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 5px top 8px;
+}
+
+section form h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.input-checkbox, .input-radio {
+  gap: 10px;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+}
+
+.input-checkbox div, .input-radio div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-checkbox input, .input-radio input {
+  margin-top: 5px;
+  margin-right: 2px;
+}
+
+.input-checkbox label, .input-radio label {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.input-textarea {
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  gap: 5px;
+  border: #9B9B9B;
+}
+
+.input-textarea textarea {
+  height: 78px;
+  resize: none;
+  border: 1px solid #9B9B9B;
+  padding: 3px;
+  color: #C2185B;
+}
+
+.input-file {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.input-file input[type="file"]::-webkit-file-upload-button {
+  appearance: none;
+  background-color: #C4C4C4;
+  color: #FFFFFF;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  height: 21px;
+}
+
+.input-file label{
+  margin-right: 5px;
 }
